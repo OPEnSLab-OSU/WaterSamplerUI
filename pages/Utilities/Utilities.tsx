@@ -58,7 +58,7 @@ const UpdateRTC = () => (
     <Utility
         name={"Update RTC"}
         description={
-            "This utility update the onboard RTC (Real-time-clock) on the eDNA server.This is highly recommended if you move between timezones or when daylightsaving occurs."
+            "This utility update the onboard RTC (Real-time-clock) on the sampler server.This is highly recommended if you move between timezones or when daylightsaving occurs."
         }
         onClick={() => {
             const payload = {

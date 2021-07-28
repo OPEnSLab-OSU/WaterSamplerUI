@@ -67,8 +67,6 @@ function taskToFormValues(task: TaskServer | undefined, defaultValues: FormValue
         "sampleTime",
         "sampleVolume",
         "samplePressure",
-        "dryTime",
-        "preserveTime",
     ] as const).forEach(f => {
         result[f] = task[f];
     });
@@ -85,6 +83,7 @@ export const TaskForm = ({ highlightSection }: { highlightSection: number }) => 
     const [defaultValues] = useState(() =>
         taskToFormValues(task, {
             name: "",
+            notes: "",
             date: "2020-12-25",
             time: "12:00",
             timeBetween: 0,
@@ -93,8 +92,6 @@ export const TaskForm = ({ highlightSection }: { highlightSection: number }) => 
             sampleTime: 0,
             sampleVolume: 0,
             samplePressure: 0,
-            dryTime: 0,
-            preserveTime: 0,
         })
     );
 

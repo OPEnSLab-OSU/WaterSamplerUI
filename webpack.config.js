@@ -75,7 +75,7 @@ module.exports = (_env, argv) => {
             // Automatically generate index HTML file based on template
             new HtmlWebpackPlugin({
                 inject: "body",
-                title: `EDNA Dashboard ${isProduction ? "" : "(dev)"}`,
+                title: `WaterSampler Dashboard ${isProduction ? "" : "(dev)"}`,
                 template: path.resolve(__dirname, "app/template.ejs"),
                 // alwaysWriteToDisk: true, // enable this option to write to disk regardless of the mode we are in.
             }),

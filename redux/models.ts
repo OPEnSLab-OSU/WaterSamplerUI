@@ -19,12 +19,10 @@ export const KEYS = {
     STATE_NAME: "stateName",
     TIME_UTC: "timeUTC",
     VALVE_CURRENT: "valveCurrent",
-    VALVE_DRY_TIME: "valveDryTime",
     VALVE_FLUSH_TIME: "valveFlushTime",
     VALVE_FLUSH_VOLUME: "valveFlushVolume",
     VALVE_GROUP: "valveGroup",
     VALVE_ID: "valveId",
-    VALVE_PRESERVE_TIME: "valvePreserveTime",
     VALVE_SAMPLE_PRESSURE: "valveSamplePressure",
     VALVE_SAMPLE_TIME: "valveSampleTime",
     VALVE_SAMPLE_VOLUME: "valveSampleVolume",
@@ -84,10 +82,6 @@ export const TaskServerSchema = object({
     samplePressure: number()
         .min(0),
     sampleVolume: number()
-        .min(0),
-    dryTime: number()
-        .min(0),
-    preserveTime: number()
         .min(0),
 });
 

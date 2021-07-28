@@ -11,7 +11,7 @@ const StyledLink = styled(Link)<{ disabled?: boolean }>`
 const Home = () => (
     <StyledLink to="/" tw="flex items-center">
         <Browser size={24} />
-        <div tw="ml-2">EDNA Dashboard</div>
+        <div tw="ml-2">WaterSampler Dashboard</div>
     </StyledLink>
 );
 
