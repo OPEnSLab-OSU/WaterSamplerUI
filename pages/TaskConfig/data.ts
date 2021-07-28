@@ -86,7 +86,6 @@ export const sampleFields: FieldProps[] = [
     { name: "samplePressure", type: "number", label: "Sample Pressure", helperText: "Unit: psi" },
 ];
 
-
 export type ConfigSectionName = "general" | "valves" | "flush" | "sample";
 export const configFields: Record<ConfigSectionName, { title: string; fields: FieldProps[] }> = {
     general: { title: "General", fields: generalFields },

@@ -26,12 +26,7 @@ const mergeWithFormValues = (base: TaskServer, values: FormValues): TaskServer =
     merged.timeBetween = values.timeBetween;
     merged.valves = values.valves.split(",").map(v => Number(v));
 
-    ([
-        "flushTime",
-        "sampleTime",
-        "samplePressure",
-        "sampleVolume",
-    ] as const).forEach(f => {
+    (["flushTime", "sampleTime", "samplePressure", "sampleVolume"] as const).forEach(f => {
         merged[f] = values[f];
     });
 
