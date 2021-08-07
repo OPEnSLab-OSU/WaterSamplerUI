@@ -35,7 +35,7 @@ The easiest way to resolve this issue is to remove all files from the SD card an
 ## UI redirecting to https (Firefox)
 - What causes this?
 
-By default, Firefox attempts to connect websites using the HTTPS protocol, which is not supported by the eDNA sampler.
+By default, Firefox attempts to connect websites using the HTTPS protocol, which is not supported by the water sampler.
 
 - What does this problem look like?
 
