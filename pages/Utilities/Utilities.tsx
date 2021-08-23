@@ -54,6 +54,23 @@ const HyperFlush = () => (
     />
 );
 
+const Prefill = () => (
+    <Utility
+        name="HyperFlush"
+        description={
+            "Begin a Prefill sequence. prefills bags with argon at input"
+        }
+        onClick={() => {
+            get("api/prefill")
+                .withTimeout(1000)
+                .send()
+                .then(() => {
+                    alert("Prefill started");
+                });
+        }}
+    />
+);
+
 const UpdateRTC = () => (
     <Utility
         name={"Update RTC"}
@@ -89,6 +106,7 @@ export function Utilities() {
         <PageContainer>
             <h1 tw="text-display text-primary col-span-full ">Utilities</h1>
             <HyperFlush />
+            <Prefill />
             <UpdateRTC />
             <ResetValves />
         </PageContainer>

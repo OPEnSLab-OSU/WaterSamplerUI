@@ -65,6 +65,7 @@ export const Application = () => (
                         <Route exact path="/" render={() => <Redirect to="/monitoring" />} />
                         <Route exact path="/404" render={() => <NotFound />} />
                         <Route exact path="/monitoring" render={() => <Monitoring />} />
+                        <Route exact path="/documentation" render={() => <Monitoring />} />
                         <Route exact path="/tasks" render={() => <Tasks />} />
                         <Route path="/tasks/:taskId" render={() => <TaskConfig />} />
                         <Route path="/utilities" render={() => <Utilities />} />
