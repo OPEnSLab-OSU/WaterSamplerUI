@@ -57,9 +57,7 @@ const HyperFlush = () => (
 const Prefill = () => (
     <Utility
         name="HyperFlush"
-        description={
-            "Begin a Prefill sequence. prefills bags with argon at input"
-        }
+        description={"Begin a Prefill sequence. prefills bags with argon at input"}
         onClick={() => {
             get("api/prefill")
                 .withTimeout(1000)
